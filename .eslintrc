@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "zeal",
+    "zeal/react"
+  ]
+}

@@ -3,10 +3,21 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "lint": "NODE_ENV=production node_modules/.bin/eslint 'app/**/*.js' 'android/**/*.js' 'ios/**/*.js' --max-warnings 0 && echo $'  Lint free! \\360\\237\\221\\215'",
     "start": "node node_modules/react-native/local-cli/cli.js start"
   },
   "dependencies": {
     "react": "^15.1.0",
-    "react-native": "0.27.2"
+    "react-native": "0.27.2",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.0.4",
+    "eslint": "^2.13.0",
+    "eslint-config-zeal": "^0.7.0",
+    "eslint-plugin-import": "^1.8.1",
+    "eslint-plugin-react": "^5.2.2"
   }
 }

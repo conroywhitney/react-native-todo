@@ -1,4 +1,3 @@
-import React from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
@@ -9,11 +8,11 @@ export default connect(
   mapDispatchToProps
 )(TodoApp)
 
-function mapStateToProps(state) {
+function mapStateToProps() {
   return {}
 }
 
-function mapDispatchToProps(dispatch, ownProps) {
+function mapDispatchToProps(dispatch) {
   return bindActionCreators({
   }, dispatch)
 }
