@@ -1,16 +1,20 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { View } from 'react-native'
+
+import TodoList from '../containers/todoList'
 
 export default function TodoApp() {
   const styles = {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center'
+    paddingTop: 50,
+    paddingRight: 10,
+    paddingBottom: 50,
+    paddingLeft: 10,
+    flex: 1
   }
 
   return (
     <View style={styles}>
-      <Text>Hello, World!</Text>
+      <TodoList />
     </View>
   )
 }
