@@ -1,6 +1,7 @@
 import React from 'react'
 import { View } from 'react-native'
 
+import AddTodo from '../containers/addTodo'
 import TodoList from '../containers/todoList'
 
 export default function TodoApp() {
@@ -14,6 +15,7 @@ export default function TodoApp() {
 
   return (
     <View style={styles}>
+      <AddTodo />
       <TodoList />
     </View>
   )

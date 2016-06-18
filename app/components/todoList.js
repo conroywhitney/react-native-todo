@@ -21,13 +21,23 @@ export default class TodoList extends Component {
   constructor(props) {
     super(props)
 
+    const { items } = props
+
     this.state = {
-      dataSource: this.initializeDataSource()
+      dataSource: this.initializeDataSource(items)
     }
   }
 
-  initializeDataSource() {
-    const { items } = this.props
+  componentWillReceiveProps(nextProps) {
+    const { items: newItems } = nextProps
+
+    /* eslint-disable react/no-set-state */
+    this.setState({
+      dataSource: this.initializeDataSource(newItems)
+    })
+  }
+
+  initializeDataSource(items) {
     const rowHasChanged = (r1, r2) => r1 !== r2
     const dataSource = new ListView.DataSource({ rowHasChanged })
 

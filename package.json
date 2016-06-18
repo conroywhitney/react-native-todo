@@ -7,8 +7,10 @@
     "start": "node node_modules/react-native/local-cli/cli.js start"
   },
   "dependencies": {
+    "ramda": "^0.21.0",
     "react": "^15.1.0",
     "react-native": "0.27.2",
+    "react-native-icon-button": "^1.0.0",
     "react-redux": "^4.4.5",
     "redux": "^3.5.2",
     "redux-thunk": "^2.1.0"
