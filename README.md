@@ -1,6 +1,9 @@
 # React Native Todo App
 First stab at a learning project for creating a React Native application using redux. Don't judge :grin:
 
+## Screenshot
+<img src="https://raw.githubusercontent.com/conroywhitney/react-native-todo/master/images/react-native-todo-screenshot.png" alt="react-native-todo screenshot" width="300" />
+
 ## Setup
 After following the [React Native getting started docs](http://facebook.github.io/react-native/docs/getting-started.html), run: `react-native run-ios`
 
